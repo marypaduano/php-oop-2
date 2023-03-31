@@ -7,13 +7,15 @@ class Product
     public string $name;
     public INT $price;
     public string $description;
+    public Category $category
    
 
-    public function __construct($_name, $_price, $_description)
+    public function __construct($_name, $_price, $_description, $_category)
     {
         $this->name = $_name;
         $this->price = $_price;
         $this->description = $_description;
+        $this->category = $_category;
     }
 
     function getName() {
