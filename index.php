@@ -5,8 +5,8 @@ require_once "./models/Food.php";
 
 $products = [
     $product1,
-    new Product("monopattini", 300, false),
-    new Product("monopattini", 800, false)
+    new Product(),
+    new Product()
   ];
 
   var_dump($product1)
