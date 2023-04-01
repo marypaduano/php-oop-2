@@ -12,7 +12,15 @@ class Food extends Product
     public function __construct($_name, $_price, $_description, $_category, $_ingredients, $_calories, $_type)
     {
        parent::__construct($_name, $_price, $_description, $_category)
-        $this->ingredients = $_ingredients;
+        $this->ingredients = this->getIngredients($_ingredients);
+    }
+
+    function getIngredients($ingredients)
+    {
+        if ($ingredients === ''){
+            return 'Non ci sono informazioni sugli ingredienti'
+        }
+        return 'Ingredienti: '.$ingredients;
     }
       
 }

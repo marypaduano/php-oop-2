@@ -1,13 +1,13 @@
 <?php
 
-require_once __DIR__.'/models/Categories.php'
+require_once __DIR__.'/Categories.php';
 
 class Product
 {
     public string $name;
     public INT $price;
     public string $description;
-    public Category $category
+    public Category $category;
    
 
     public function __construct($_name, $_price, $_description, $_category)
