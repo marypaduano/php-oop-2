@@ -11,7 +11,6 @@ class Category
   $this->figure = $_figure;
   
 }
-if ($pet == 'cat'){
-  $figure = 
-}
+
+
 }

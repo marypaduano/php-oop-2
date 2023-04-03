@@ -9,14 +9,16 @@ class Product
     public float $price;
     public string $description;
     public Category $category;
+    public $figure;
    
 
-    public function __construct($_name, $_price, $_description, $_category)
+    public function __construct($_name, $_price, $_description, $_category, $_figure)
     {
         $this->name = $_name;
         $this->price = $_price;
         $this->description = $_description;
         $this->Category = $_category;
+        // $this->figure = setFigure($newFigure);
     }
 
     function getName() {
@@ -29,5 +31,14 @@ class Product
     function getPrice() {
         return $this->price;
       }
+    function setFigure($newFigure){
+        if ($pet == 'cat'){
+          $figure = '<i class="fa-regular fa-cat"></i>';
+        }else if ($pet == 'dog'){
+          $figure = '<i class="fa-regular fa-dog"></i>';
+        }else('category not found');
+        
+        $this->figure = $newFigure;
+        }
       
 }
