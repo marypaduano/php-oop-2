@@ -36,9 +36,9 @@ class Product
           $figure = '<i class="fa-regular fa-cat"></i>';
         }else if ($pet == 'dog'){
           $figure = '<i class="fa-regular fa-dog"></i>';
-        }else('category not found');
-        
-        $this->figure = $newFigure;
         }
+        return
+        $this->figure = $newFigure;      
       
+}
 }

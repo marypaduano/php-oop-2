@@ -8,7 +8,7 @@ class Category
   public function __construct($_pet, $_figure)
   {
   $this->pet = $_pet;
-  $this->figure = $_figure;
+  $this->figure = setFigure($newFigure);
   
 }
 
