@@ -1,11 +1,12 @@
 <?php
 
-require_once __DIR__.'/Categories.php';
+require_once __DIR__.'/Category.php';
+require_once __DIR__.'/Food.php';
 
 class Product
 {
     public string $name;
-    public INT $price;
+    public float $price;
     public string $description;
     public Category $category;
    
@@ -15,7 +16,7 @@ class Product
         $this->name = $_name;
         $this->price = $_price;
         $this->description = $_description;
-        $this->category = $_category;
+        $this->Category = $_category;
     }
 
     function getName() {

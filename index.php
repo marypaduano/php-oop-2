@@ -1,12 +1,12 @@
 <?php
 require_once "./models/Product.php";
-require_once "./models/Categorie.php";
+require_once "./models/Category.php";
 require_once "./models/Food.php";
 
 $products = [
-    $product1,
-    new Product(),
-    new Product()
+    $product1 = new Product('croccantini',15.90,'croccantini di pollo', 'dog'),
+    $product2 = new Product('crocchette',16.90,'crocchette di manzo','cat'),
+    $product3 = new Product('palla',5.50, 'palla di gomma antistress','dog'),
   ];
 
   var_dump($product1)
